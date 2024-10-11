@@ -24,7 +24,7 @@ TripleTen Project-4
 # 2. Install required dependencies
 # python app.py
 
-# Open your web browser and navigate to: https://github.com/MichaelKrajcar/Project4
+# Open your web browser and navigate to: https://github.com/MichaelKrajcar/Project4 or 
 # http://34.211.200.85:8501 is the app URL for the completed project. 
 
-# sorry for delay, the app is opening on my end albeit slowly, link updated in readme and made sure everythingn is set to public.
+# 
