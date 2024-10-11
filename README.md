@@ -17,14 +17,14 @@ TripleTen Project-4
 # To run the app locally, follow these steps:
 
 # 1. Clone the repository:
-   ```bash
-   git clone [repository URL]
-   cd [repository-directory]
+#  ```bash
+#  git clone [repository URL]
+#   cd [repository-directory]
 
 # 2. Install required dependencies
-pip install -r requirements.txt
-
-# 3. Run App in git bash
-python app.py
+# python app.py
 
 # Open your web browser and navigate to: https://github.com/MichaelKrajcar/Project4
+# http://34.211.200.85:8501 is the app URL for the completed project. 
+
+# sorry for delay, the app is opening on my end albeit slowly, link updated in readme and made sure everythingn is set to public.
