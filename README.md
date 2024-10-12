@@ -26,8 +26,3 @@ TripleTen Project-4
 
 # Open your web browser and navigate to: https://github.com/MichaelKrajcar/Project4 or 
 # http://34.211.200.85:8501 is the app URL for the completed project. 
-<<<<<<< HEAD
-=======
-
-# 
->>>>>>> e24d16bc37ca249901968a074626758bbf12e2a5
