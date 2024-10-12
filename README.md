@@ -26,3 +26,5 @@ TripleTen Project-4
 
 # Open your web browser and navigate to: https://github.com/MichaelKrajcar/Project4 or 
 # http://34.211.200.85:8501 is the app URL for the completed project. 
+
+# Im sorry but i was almost completely lost on how to setup the app.py portion, so i searched and used some examples from online and reached out to a few fellow students for examples
