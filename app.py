@@ -1,6 +1,8 @@
 import pandas as pd
 import streamlit as st
 import plotly.express as px
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Title of the app, my apologies but I didn't recall any of this in any of the past lessons, so i found examples online to use for this specific page
 st.title("Vehicle Price Analysis by Color")
