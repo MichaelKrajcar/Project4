@@ -6,7 +6,7 @@ import plotly.express as px
 st.title("Vehicle Price Analysis by Color")
 
 # Load the dataset
-data = pd.read_csv('C:\\Users\\micha\\TripleTen\\Project4\\vehicles_us.csv')
+data = pd.read_csv('vehicles_us.csv')
 
 # Data Cleaning
 data = data.drop_duplicates()
