@@ -1,12 +1,8 @@
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-### delete matplotlib and seaborn, replace following code with only plotly.express
-
-# Title of the app, my apologies but I didn't recall any of this in any of the past lessons, so i found examples online to use for this specific page
+# Title of the app
 st.title("Vehicle Price Analysis by Color")
 
 # Load the dataset
@@ -27,23 +23,19 @@ color_option = st.sidebar.selectbox("Select Paint Color", data['paint_color'].un
 # Filter data based on user input
 filtered_data = data[data['paint_color'] == color_option]
 
-# Visualization
+# Visualization: Price Distribution for Selected Paint Color
 st.subheader("Price Distribution for Selected Paint Color")
-fig, ax = plt.subplots()
-sns.boxplot(x='paint_color', y='price', data=filtered_data, ax=ax)
-plt.title(f'Price Distribution for {color_option}')
-st.pyplot(fig)
+fig = px.box(filtered_data, x='paint_color', y='price', title=f'Price Distribution for {color_option}')
+st.plotly_chart(fig)
 
 # Count of vehicles by paint color
-paint_color_counts = data['paint_color'].value_counts()
+paint_color_counts = data['paint_color'].value_counts().reset_index()
+paint_color_counts.columns = ['paint_color', 'count']
+
 st.subheader("Vehicle Count by Paint Color")
-fig2, ax2 = plt.subplots()
-sns.barplot(x=paint_color_counts.index, y=paint_color_counts.values, palette='Set2', ax=ax2)
-plt.title('Distribution of Vehicles by Paint Color')
-plt.xlabel('Paint Color')
-plt.ylabel('Count')
-plt.xticks(rotation=45)
-st.pyplot(fig2)
+fig2 = px.bar(paint_color_counts, x='paint_color', y='count', title='Distribution of Vehicles by Paint Color', 
+               color='paint_color', color_discrete_sequence=px.colors.qualitative.Set2)
+st.plotly_chart(fig2)
 
 # Conclusion
 st.subheader("Conclusion")
